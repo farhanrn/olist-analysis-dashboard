@@ -43,7 +43,7 @@ st.markdown(
 
 # Create a sidebar for navigation
 #st.sidebar.title("Navigation")
-st.sidebar.image("src/olist.png", use_column_width=True)  # Add logo image
+st.sidebar.image("/src/olist.png", use_column_width=True)  # Add logo image
 st.sidebar.markdown("### 📊 Dashboard Sections")
 
 # Create a list of pages for easier management
