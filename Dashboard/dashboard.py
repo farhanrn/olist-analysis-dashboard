@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import Image
 
 # Set the page configuration
 st.set_page_config(
@@ -44,8 +43,6 @@ st.markdown(
 
 # Create a sidebar for navigation
 #st.sidebar.title("Navigation")
-image = Image.open("olist.png")
-st.sidebar.image(image, use_column_width=True)
 st.sidebar.markdown("### 📊 Dashboard Sections")
 
 # Create a list of pages for easier management
