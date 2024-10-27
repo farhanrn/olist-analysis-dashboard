@@ -44,7 +44,7 @@ st.markdown(
 # Create a sidebar for navigation
 #st.sidebar.title("Navigation")
 st.sidebar.markdown("### 📊 Dashboard Sections")
-
+st.sidebar.image("https://raw.githubusercontent.com/farhanrn/olist-analysis-dashboard/refs/heads/main/Dashboard/olist.png")
 # Create a list of pages for easier management
 pages = {
     "🏠 Introduction": "Introduction",
