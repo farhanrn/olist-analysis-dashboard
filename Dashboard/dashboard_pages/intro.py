@@ -5,7 +5,7 @@ dataset = "https://raw.githubusercontent.com/farhanrn/olist-analysis-dashboard/r
 df = pd.read_csv(dataset)
 # ======================================================================================================
 def main():
-    st.image("src/dataset-cover.png")
+    st.image("https://github.com/farhanrn/olist-analysis-dashboard/blob/main/Dashboard/dataset-cover.png")
     # Introduction Section
     st.title("Olist E-Commerce Analysis")
     st.subheader("Complete Dashboard with Various Insights")
