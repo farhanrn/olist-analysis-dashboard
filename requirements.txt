@@ -1,0 +1,6 @@
+streamlit>=1.0
+pandas>=1.3
+numpy>=1.21
+streamlit_shadcn_ui  # This package may require a specific installation method if it isn't on PyPI.
+matplotlib>=3.4
+seaborn>=0.11
