@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-df = pd.read_csv("src/all_data.csv")
+dataset = "https://raw.githubusercontent.com/farhanrn/olist-analysis-dashboard/refs/heads/main/Data/all_data.csv"
+df = pd.read_csv(dataset)
 # ======================================================================================================
 def main():
     st.image("src/dataset-cover.png")
