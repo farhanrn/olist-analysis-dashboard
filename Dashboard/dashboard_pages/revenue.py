@@ -10,7 +10,8 @@ import seaborn as sns
 import time
 
 # Dataset Preparation
-all_data = pd.read_csv('src/all_data.csv')
+dataset = "https://raw.githubusercontent.com/farhanrn/olist-analysis-dashboard/refs/heads/main/Data/all_data.csv"
+all_data = pd.read_csv(dataset)
 
 # ======================================================================================================
 def main():
