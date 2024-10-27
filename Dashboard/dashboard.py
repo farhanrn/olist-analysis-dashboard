@@ -3,7 +3,7 @@ import streamlit as st
 # Set the page configuration
 st.set_page_config(
     page_title="Olist Dashboard", 
-    page_icon="src/favicon.ico",
+    page_icon="https://raw.githubusercontent.com/farhanrn/olist-analysis-dashboard/refs/heads/main/Dashboard/src/favicon.ico",
     layout="wide")
 
 # Initialize session state for the selected page
