@@ -1,5 +1,5 @@
 
-![Logo](http://localhost:8501/media/194eeebed066454e1b6311f1dc2d4c2c7c2885b6decc3df2d0c9af81.jpg)
+![Logo](https://raw.githubusercontent.com/farhanrn/olist-analysis-dashboard/refs/heads/main/Dashboard/dataset-cover.png)
 
 
 
@@ -22,7 +22,7 @@ Olist is a unicorn company founded by Tiago Dalvi in ​​Brazil that operates 
 ## Deployment
 The Project Already Deployed in Streamlit here is
 
-[Link Demo]()
+[Link Demo](https://olist-dashboard.streamlit.app/)
 
 
 ## Setup Environment - Anaconda
