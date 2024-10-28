@@ -22,7 +22,12 @@ def main():
     PENDAPATAN = ["41544.13", "6111446.43", "7375125.31"]
     
     # Set the locale to Brazilian Portuguese
-    locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+    try:
+        locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+    except locale.Error:
+        print("Locale 'pt_BR.UTF-8' not available, using default locale.")
+        locale.setlocale(locale.LC_ALL, '')  # Use default locale
+        #locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
     # Function to format numbers as Brazilian currency
     def format_brl(amount):
