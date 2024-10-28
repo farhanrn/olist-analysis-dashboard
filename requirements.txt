@@ -4,3 +4,4 @@ numpy>=1.21
 streamlit_shadcn_ui  # This package may require a specific installation method if it isn't on PyPI.
 matplotlib>=3.4
 seaborn>=0.11
+babel
