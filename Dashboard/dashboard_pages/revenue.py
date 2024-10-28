@@ -44,7 +44,7 @@ def main():
     
     # =============================== TOTAL REVENUE BY STATE =====================================================
     st.subheader("Total Revenue By State")
-    st.set_option('deprecation.showPyplotGlobalUse', False)
+    #st.set_option('deprecation.showPyplotGlobalUse', False)
     
     # Group data by customer state and calculate total revenue
     revenue_by_state = all_data.groupby('customer_state')['total_revenue'].sum().reset_index()
