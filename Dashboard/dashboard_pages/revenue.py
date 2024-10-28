@@ -8,6 +8,7 @@ import locale  # Import locale for currency formatting
 import matplotlib.pyplot as plt
 import seaborn as sns
 import time
+from babel.numbers import format_currency
 
 # Dataset Preparation
 dataset = "https://raw.githubusercontent.com/farhanrn/olist-analysis-dashboard/refs/heads/main/Data/all_data.csv"
@@ -21,17 +22,12 @@ def main():
     # Sample revenue data for each year
     PENDAPATAN = ["41544.13", "6111446.43", "7375125.31"]
     
-    # Set the locale to Brazilian Portuguese
-    try:
-        locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
-    except locale.Error:
-        print("Locale 'pt_BR.UTF-8' not available, using default locale.")
-        locale.setlocale(locale.LC_ALL, '')  # Use default locale
-        #locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
-
     # Function to format numbers as Brazilian currency
     def format_brl(amount):
-        return locale.currency(float(amount), symbol=True, grouping=True)
+        try:
+            return format_currency(float(amount), 'BRL', locale='pt_BR')
+        except Exception:
+            return f"R$ {float(amount):,.2f}"  # Default format if locale fails
 
     st.subheader("Total Revenue Per Year")
     TAHUN = ["2016", "2017", "2018"]
